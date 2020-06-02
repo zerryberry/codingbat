@@ -1,0 +1,86 @@
+Warmup-1:
+
+ sleep_in 
+ 
+ def sleep_in(weekday, vacation):
+  if weekday:
+    return vacation == True
+  return True if weekday == False and (vacation == True or vacation == False) else False
+
+ monkey_trouble 
+ 
+ def monkey_trouble(a_smile, b_smile):
+  return True if a_smile == b_smile else False
+  
+ sum_double
+ 
+ def sum_double(a, b):
+  return a+b if a!= b else 2*(a+b)
+  
+  
+ diff21 
+ 
+ def diff21(n):
+  return abs(n-21) if n<=21 else 2*abs(n-21)
+
+
+ parrot_trouble
+ 
+ def parrot_trouble(talking, hour):
+  return True if talking ==  True and hour not in range(7,21,1) else False
+
+
+ makes10 
+ 
+ def makes10(a, b):
+  return True if ((a==10 or b == 10) or a+b == 10) else False
+  
+  
+ near_hundred 
+ 
+ def near_hundred(n):
+  return True if ((abs(n-100)<=10) or (abs(n-200) <= 10)) else False
+ 
+ pos_neg 
+ 
+ def pos_neg(a, b, negative):
+    if ((a < 0 and b > 0) or (a > 0 and b < 0)) and negative == False:
+        c= True
+    elif (a<0 and b<0 ) and negative == True:
+        c= True
+    else:
+        c= False
+    return c
+ 
+ not_string
+ 
+ def not_string(str):
+  return "not " + str if str[:3] != "not" else str
+  
+ 
+ missing_char 
+ 
+ def missing_char(str, n):
+  return str.replace(str[n], '')
+
+ 
+ front_back 
+ 
+ def front_back(str):
+  if len(str) <= 1:
+    return str
+  
+  mid = str[1:len(str)-1]  # can be written as str[1:-1]
+  return str[len(str)-1] + mid + str[0]
+ 
+ 
+ front3 
+ 
+ def front3(str):
+  if len(str) < 3:
+    return 3*str
+  else:
+    return 3*(str[:3])
+
+ 
+ 
